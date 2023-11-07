@@ -2,3 +2,18 @@ CourseOfAction
 -BackEnd
     . Fijarse de sacar el codigo que hace funcionar el programa (master_pssw) afuera de la carpeta principal a ver si
         de esa forma funciona el import.
+    . Preguntar si poner un "Borrar datos".
+    . Buscar librerias de encriptacion (ej, Fernet).
+            .. Encriptar contraseña maestra y contraseña de los datos.
+    . Ver de usar objetos y .json
+
+-GUI
+    . Usar frames. Contraseña maestra (f1) -> Menu (f2) -> Datos (f3)
+    . Acordarse de los cambios de cursor, por ej: cuando paso en un "aceptar" o "enviar hacer que el cursor sea una 
+        "mano agarrando".
+    . Ver de que forma se puede ajustar automaticamente el tkinter a la resolucion de tu pantalla, sea cual sea.
+        .. De todas formas todo deberia estar centrado en el medio de la pantalla (tanto x como y).
+    . Con frame.config(show='*') le podes cambiar para que muestre * en vez de los caracteres.
+    . Boton de salir en todos los frames, especialmente en el primero (no se para que porque para eso esta la "X").
+        .. (button_mp = Button(frame_mp, text='Salir', command = ventana.destroy).grid(row=1, column=1))
+        
