@@ -1,7 +1,7 @@
 import json
-import os
 
 file_json = r'Password_Manager/data_dicc.json'
+
 # Crear diccionario
 data_json = {}
 

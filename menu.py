@@ -1,5 +1,6 @@
 from data_loading.load_data import load
 from data_loading.write_Json import add_data
+from data_reading.read_Json import read
 
 def options():
     print('\n1. Mostrar todos los usuarios y contraseñas.')
@@ -16,7 +17,7 @@ def main():
             opt = int(input('Ingrese una opcion: '))      
             if opt >= 1 and opt <= 5:
                 if opt == 1:
-                    pass
+                    read()
                 elif opt == 2:
                     pass
                 elif opt == 3:
