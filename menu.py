@@ -1,6 +1,8 @@
 from data_loading.load_data import load
 from data_loading.write_Json import add_data
 from data_reading.read_Json import read
+from data_remove.delete_data import rm
+
 
 def options():
     print('\n1. Mostrar todos los usuarios y contraseñas.')
@@ -29,7 +31,7 @@ def main():
                 elif opt == 5:
                     pass
                 elif opt == 6:
-                    pass
+                    rm()
             elif opt == 7:
                 print(' - FIN DEL PROGRAMA - ')
                 quit()

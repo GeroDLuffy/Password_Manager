@@ -3,4 +3,4 @@ def load():
     users = input('Ingrese usuario: ')
     password = input('Ingrese contraseña: ')
     print('¡Se agregaron con exito los datos!')
-    return platform, users, password
+    return platform.capitalize(), users, password
