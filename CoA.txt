@@ -6,6 +6,9 @@ CourseOfAction
     . Buscar librerias de encriptacion (ej, Fernet).
             .. Encriptar contraseña maestra y contraseña de los datos.
     . Ver de usar objetos y .json
+    . Punto 2: Buscar un dato. Buscar un usuario ingresado en todas las plataformas.
+    . Punto 4/5: Cambiar un usuario/contraseña. Cambiar un usuario y/o contraseña por la plataforma.
+
 
 -GUI
     . Usar frames. Contraseña maestra (f1) -> Menu (f2) -> Datos (f3)
