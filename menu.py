@@ -4,18 +4,19 @@ from data_reading.read_Json import read
 
 def options():
     print('\n1. Mostrar todos los usuarios y contraseñas.')
-    print('2. Buscar contraseña por usuario.')
+    print('2. Buscar un dato.')
     print('3. Agregar un nuevo usuario y contraseña.')
     print('4. Cambiar un usuario.')
     print('5. Cambiar una contraseña.')
-    print('6. Salir.')
+    print('6. Borrar un dato.')
+    print('7. Salir.')
 
 def main():
     while True:
         options()
         try:
             opt = int(input('Ingrese una opcion: '))      
-            if opt >= 1 and opt <= 5:
+            if opt >= 1 and opt <= 6:
                 if opt == 1:
                     read()
                 elif opt == 2:
@@ -27,7 +28,9 @@ def main():
                     pass
                 elif opt == 5:
                     pass
-            elif opt == 6:
+                elif opt == 6:
+                    pass
+            elif opt == 7:
                 print(' - FIN DEL PROGRAMA - ')
                 quit()
             else:
