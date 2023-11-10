@@ -8,11 +8,11 @@ def read():
             data = json.load(file)
 
             # Recorre el diccionario y muestra cada clave y valor
-            for plataforma, informacion in data.items():
-                print("\nPlataforma:", plataforma)
-                for item in informacion:
-                    for clave, valor in item.items():
-                        print(f"{clave}: {valor}")
+            for plataform, info in data.items():
+                print("\nPlataforma:", plataform)
+                for item in info:
+                    for key, value in item.items():
+                        print(f"{key}: {value}")
                     print()  # Línea en blanco entre los elementos
 
     except FileNotFoundError:
