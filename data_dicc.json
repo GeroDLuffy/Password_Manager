@@ -1,36 +1,28 @@
 {
-    "Nefli": [
+    "Netflix": [
         {
-            "Usuario: ": "Frakk",
-            "Contrasena: ": "010101"
+            "Usuario: ": "Gerox",
+            "Contrasena: ": "1234"
+        },
+        {
+            "Usuario: ": "Lupita",
+            "Contrasena: ": "banana"
         }
     ],
-    "Hbo": [
+    "Amazon": [
         {
-            "Usuario: ": "geroooo",
-            "Contrasena: ": "12s"
-        },
-        {
-            "Usuario: ": "flanki",
-            "Contrasena: ": "putodemierda"
-        },
-        {
-            "Usuario: ": "foden",
-            "Contrasena: ": "sicopata"
-        },
-        {
-            "Usuario: ": "lupitatatata",
-            "Contrasena: ": "skskskks"
-        },
-        {
-            "Usuario: ": "julian",
-            "Contrasena: ": "alvarez"
+            "Usuario: ": "Franki",
+            "Contrasena: ": "amaagerox"
         }
     ],
-    "Espn": [
+    "Twitch": [
         {
-            "Usuario: ": "jalan",
-            "Contrasena: ": "empujaland"
+            "Usuario: ": "gerox",
+            "Contrasena: ": "melarecomo"
+        },
+        {
+            "Usuario: ": "GeroDLuffy",
+            "Contrasena: ": "5432"
         }
     ]
 }
