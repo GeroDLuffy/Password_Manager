@@ -6,7 +6,8 @@ CourseOfAction
     . Buscar librerias de encriptacion (ej, Fernet).
             .. Encriptar contraseña maestra y contraseña de los datos.
     . Ver de usar objetos y .json
-    . Punto 2: Buscar un dato. Buscar un usuario ingresado en todas las plataformas.
+    . Punto 2: Buscar un dato. Buscar un usuario ingresado en todas las plataformas. Usar el mismo codigo que en 
+        el modulo "delete_data".
     . Punto 4/5: Cambiar un usuario/contraseña. Cambiar un usuario y/o contraseña por la plataforma.
 
 
