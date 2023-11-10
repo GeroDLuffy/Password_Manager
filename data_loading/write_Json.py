@@ -26,21 +26,3 @@ def add_data(plat, user, pssw):
 
     with open(file_json, 'w') as file:
         json.dump(data_json, file, indent=4)
-
-
-
-    # data_json['Plataforma'] = [plat]
-    # data_json['Plataforma'].append({
-    #     'Usuario: ' : user,
-    #     'Contrasena: ' : pssw
-    # })
-    # with open(file_json, 'w') as file:
-    #     json.dump(data_json, file, indent=4)
-
-
-    # if os.path.exists(file_json):
-    #     with open(file_json, 'a') as file:
-    #         json.dump(data_json, file, indent=4)
-    # else:
-    #     with open(file_json, 'w') as file:
-    #         json.dump(data_json, file, indent=4)
