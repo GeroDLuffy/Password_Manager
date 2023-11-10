@@ -5,7 +5,7 @@ def master_pssw():
     tries = 3
     while True:
         attempt = input('Ingrese la contraseña maestra: ')
-        if attempt.lower() == master:
+        if attempt == master:
             main()
         else:
             if tries == 1:
