@@ -8,29 +8,29 @@ def rm():
         # Cargar el contenido del archivo JSON en un diccionario
         with open(file_json, 'r') as file:
             data = json.load(file)
-        
-        # Nombre de la plataforma donde esta el usuario que deseas eliminar.
-        try:
-            plat_to_rm = input('Ingrese plataforma: ')
-            user_to_rm = input('Ingrese un usuario que desea eliminar: ')
-        except NameError:
-            print('asd')
-
-        # Verificar si la plataforma existe en el diccionario.
-        if plat_to_rm.capitalize() in data:
-            for us in data[plat_to_rm.capitalize()]:                
-                if us['Usuario: '] == user_to_rm:
-                    print(f'Si existe el usuario {user_to_rm} en la plataforma {plat_to_rm}')
-                    break
-                else:
-                    print(f'No existe el usuario {user_to_rm} en la plataforma {plat_to_rm}')
-                    break
 
     except FileNotFoundError:
         print(f"El archivo JSON '{file_json}' no existe.")
+        return
     except json.decoder.JSONDecodeError:
-        print(f"El archivo JSON '{file_json}' no se pudo decodificar correctamente.")
+        print(f"El archivo JSON '{file_json}' no se pudo decodificar correctamente.")    
+        return
+    
+    # Nombre de la plataforma donde esta el usuario que deseas eliminar.
+    plat_to_rm = input('Ingrese plataforma: ')
+    user_to_rm = input('Ingrese un usuario que desea eliminar: ')
+    # [key] : [value]
 
+    # Verificar si la plataforma existe en el diccionario.
+    if plat_to_rm.capitalize() in data:
+        # Verificamos si el usuario existe en el diccionario.
+        for us in data[plat_to_rm]:
+            if us['Usuario: '] == user_to_rm:
+                pass
+            else:
+                pass
+        # data[plat_to_rm] = [user_to_rm]
+        
 
 
 
