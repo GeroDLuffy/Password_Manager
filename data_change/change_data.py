@@ -3,7 +3,7 @@ from data_loading.write_Json import add_data
 
 file_json = r'Password_Manager/data_dicc.json'
 
-def algo():
+def modify():
     try:
         with open(file_json, 'r') as file:
             data = json.load(file)
