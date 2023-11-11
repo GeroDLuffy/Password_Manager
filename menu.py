@@ -2,6 +2,7 @@ from data_loading.load_data import load
 from data_loading.write_Json import add_data
 from data_reading.read_Json import read
 from data_remove.delete_data import rm
+from data_change.change_data import modify
 
 
 def options():
@@ -27,7 +28,7 @@ def main():
                     plat, user, pssw = load()
                     add_data(plat, user, pssw)
                 elif opt == 4:
-                    pass
+                    modify()
                 elif opt == 5:
                     pass
                 elif opt == 6:
