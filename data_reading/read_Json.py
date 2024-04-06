@@ -10,10 +10,10 @@ def read():
             # Recorre el diccionario y muestra cada clave y valor
             for plataform, info in data.items():
                 print("\nPlataforma:", plataform)
-                for item in info:
-                    for key, value in item.items():
-                        print(f"{key}: {value}")
-                    print()  # Línea en blanco entre los elementos
+                for user, pssw in info.items():
+                        print(f'Usuario: {user}')
+                        print(f'Contraseña: {pssw}')
+                        print()  # Línea en blanco entre los elementos
 
     except FileNotFoundError:
         print(f"El archivo JSON '{file_json}' no existe.")
