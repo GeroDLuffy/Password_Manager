@@ -40,3 +40,4 @@ def main():
                 print('ERROR. Vuelva a ingresar un numero entre 1 y 6: ')
         except ValueError:
             print('Se pidió un NUMERO entre el 1 y el 6.')
+
