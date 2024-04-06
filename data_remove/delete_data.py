@@ -10,6 +10,22 @@ def rm():
         with open(file_json, 'r') as file:
             data = json.load(file)
 
+        # Nombre de la plataforma donde esta el usuario que deseas eliminar.
+        plat_to_rm = input('Ingrese plataforma: ').capitalize()
+        if plat_to_rm in data:
+            user_to_rm = input('Ingrese un usuario que desea eliminar: ')
+            if user_to_rm in data[plat_to_rm]:
+                confirm = input(f'¿Seguro que quiere borrar el usuario: {user_to_rm}? (Si/No)')
+                    
+                del data[plat_to_rm][user_to_rm]
+            else:
+                print(f'El usuario {user_to_rm} no existe en la plataforma {plat_to_rm}')
+
+        else:
+            print(f'La plataforma {plat_to_rm} no existe en {data}')
+
+
+
     except FileNotFoundError:
         print(f"El archivo JSON '{file_json}' no existe.")
         return
@@ -17,21 +33,11 @@ def rm():
         print(f"El archivo JSON '{file_json}' no se pudo decodificar correctamente.")    
         return
     
-    # Nombre de la plataforma donde esta el usuario que deseas eliminar.
-    plat_to_rm = input('Ingrese plataforma: ')
-    user_to_rm = input('Ingrese un usuario que desea eliminar: ')
+    
+
     # [key] : [value]
 
-    # Verificar si la plataforma existe en el diccionario.
-    if plat_to_rm.capitalize() in data:
-        # Verificamos si el usuario existe en el diccionario.
-        for us in data[plat_to_rm]:
-            if us['Usuario: '] == user_to_rm:
-                pass
-            else:
-                pass
-        # data[plat_to_rm] = [user_to_rm]
-        
+
 
 
 
