@@ -9,6 +9,7 @@ CourseOfAction
     . Punto 2: Buscar un dato. Buscar un usuario ingresado en todas las plataformas. Usar el mismo codigo que en 
         el modulo "delete_data".
     . Punto 4/5: Cambiar un usuario/contraseña. Cambiar un usuario y/o contraseña por la plataforma.
+    . La comprobacion de que si existe el json puede ser un modulo aparte ?
 
 
 -GUI
@@ -21,3 +22,7 @@ CourseOfAction
     . Boton de salir en todos los frames, especialmente en el primero (no se para que porque para eso esta la "X").
         .. (button_mp = Button(frame_mp, text='Salir', command = ventana.destroy).grid(row=1, column=1))
         
+- {   Key  :                                           value                                               }
+- {Key     : [{key       : value,  key          : value }, {key        :  value , key           : value  }]}        
+- {Netflix : [{'usuario' : 'user', 'contraseña' : 'pssw'}, {'usuario2' : 'user2', 'contraseña2' : 'pssw2'}]}
+
