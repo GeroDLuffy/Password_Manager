@@ -11,7 +11,6 @@ CourseOfAction
     . Punto 4/5: Cambiar un usuario/contraseña. Cambiar un usuario y/o contraseña por la plataforma.
     . La comprobacion de que si existe el json puede ser un modulo aparte ?
 
-
 -GUI
     . Usar frames. Contraseña maestra (f1) -> Menu (f2) -> Datos (f3)
     . Acordarse de los cambios de cursor, por ej: cuando paso en un "aceptar" o "enviar hacer que el cursor sea una 
