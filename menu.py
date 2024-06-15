@@ -18,7 +18,7 @@ def main():
     while True:
         options()
         try:
-            opt = int(input('Ingrese una opcion: '))      
+            opt = int(input('Ingrese una opcion: '))
             if opt >= 1 and opt <= 6:
                 if opt == 1:
                     read()
@@ -35,7 +35,7 @@ def main():
                     rm()
             elif opt == 7:
                 print(' - FIN DEL PROGRAMA - ')
-                quit()
+                break
             else:
                 print('ERROR. Vuelva a ingresar un numero entre 1 y 6: ')
         except ValueError:
